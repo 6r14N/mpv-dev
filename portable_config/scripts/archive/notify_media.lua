@@ -24,6 +24,17 @@ local new_file = false
 local yt_thumbnail = false
 local yt_failed = false
 local mpv_socket_name = o.socket_name:gsub("{pid}", tostring(pid))
+local shot_dir = mp.command_native({ "expand-path", o.shot_path })
+
+--create shot_dir if it doesn't exist
+if utils.readdir(shot_dir) == nil then
+    local args = { 'powershell', '-NoProfile', '-Command', 'mkdir', string.format("\"%s\"", shot_dir) }
+    local res = mp.command_native({name = "subprocess", capture_stdout = true, playback_only = false, args = args})
+    if res.status ~= 0 then
+        msg.error("Failed to create shot_path save directory "..shot_dir..". Error: "..(res.error or "unknown"))
+        return
+    end
+end
 
 -- Print contents of `tbl`, with indentation.
 -- `indent` sets the initial level of indentation.
@@ -197,7 +208,6 @@ function notify_metadata_updated()
     end
     path = encode_element(path)
 
-    local shot_dir = mp.command_native({ "expand-path", o.shot_path })
     shot_path = shot_dir .. "\\" .. pid .. ".jpg"
     if mp.get_property("video-codec") then
         save_shot(shot_path)
