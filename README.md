@@ -8,6 +8,7 @@ PS: mpv, ffmpeg, yt-dlp可以运行[update.bat](updater.bat)更新
 V1.0.2：
 
 * uosc新增下载字幕功能
+* 同步上游
 
 V1.0.1：
 
