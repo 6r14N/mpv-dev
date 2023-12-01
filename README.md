@@ -9,6 +9,7 @@ V1.0.2：
 
 * uosc新增下载字幕功能
 * 同步上游
+* input新增English，来自[mpv-config-eng-branch](https://github.com/dyphire/mpv-config/tree/eng)
 
 V1.0.1：
 
