@@ -5,6 +5,10 @@
 随缘更新
 PS: mpv, ffmpeg, yt-dlp可以运行[update.bat](updater.bat)更新
 
+V1.0.3：
+
+* 同步更新mpv_config-2023.12.04
+
 V1.0.2：
 
 * uosc新增下载字幕功能
