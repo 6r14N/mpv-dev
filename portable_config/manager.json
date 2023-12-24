@@ -4,12 +4,7 @@
     "whitelist":"skiptosilence%.lua$",
     "dest":"~~/scripts"
   },
-  {
-    "git":"https://github.com/snylonue/mpv_slicing_copy",
-    "whitelist":"%.lua$",
-    "dest":"~~/scripts"
-  },
-  {
+    {
     "git":"https://github.com/natural-harmonia-gropius/recent-menu",
     "whitelist":"%.lua$",
     "dest":"~~/scripts"
@@ -31,7 +26,7 @@
   },
   {
     "git":"https://github.com/dyphire/mpv-scripts",
-    "whitelist":"chapter%-list%.lua$|chapter%-make%-read%.lua$|drcbox%.lua$|fix%-avsync%.lua$|mpv%-animated%.lua$|sub%_export%.lua$|track%-list%.lua$",
+    "whitelist":"chapter%-list%.lua$|chapter%-make%-read%.lua$|fix%-avsync%.lua$|mpv%-animated%.lua$|sub%_export%.lua$|track%-list%.lua$",
     "dest":"~~/scripts",
     "branch":"main"
   },
@@ -108,12 +103,7 @@
     "whitelist":"file%-browser%.lua$",
     "dest":"~~/scripts"
   },
-  {
-    "git":"https://github.com/CogentRedTester/mpv-changerefresh",
-    "whitelist":"%.lua$",
-    "dest":"~~/scripts"
-  },
-  {
+    {
     "git":"https://github.com/CogentRedTester/mpv-segment-linking",
     "whitelist":"%.lua$",
     "dest":"~~/scripts"
