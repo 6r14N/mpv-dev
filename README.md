@@ -5,11 +5,3 @@
 随缘更新
 
 PS: mpv, ffmpeg, yt-dlp可以运行[update.bat](updater.bat)更新
-
-**For English user**
-
-* Please use English branch
-  
-* Run update.bat to update mpv, ffmpeg, yt-dlp
-
-
